@@ -10,6 +10,9 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://qqqwwweee213313.github.io/RoadAnchOR/">
   <link rel="icon" type="image/png" href="./static/images/roadanchor.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/index.css">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RoadAnchOR">
@@ -28,28 +31,27 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="./" aria-label="RoadAnchOR home">RoadAnchOR<span class="brand-dot" aria-hidden="true"></span></a>
-    <nav aria-label="Page navigation"><a href="#abstract">Abstract <span aria-hidden="true">↗</span></a></nav>
-  </header>
   <main id="main-content">
     <section class="hero" aria-labelledby="paper-title">
       <div class="hero-copy">
-        <p class="eyebrow">End-to-end autonomous driving</p>
-        <h1 id="paper-title"><span class="paper-name">RoadAnchOR:</span> <span class="paper-subtitle">Road-Adaptive Query Anchoring<br class="desktop-break"> for End-to-End Autonomous Driving</span></h1>
+        <h1 id="paper-title"><span class="paper-name">RoadAnchOR:</span> <span class="paper-subtitle">Road-Adaptive Query Anchoring for End-to-End Autonomous Driving</span></h1>
         <p class="authors">Anonymous Authors</p>
+        <nav class="publication-links" aria-label="Paper resources">
+          <a class="resource-button" href="#abstract"><span aria-hidden="true">↓</span> Abstract</a>
+        </nav>
       </div>
       <figure class="hero-art">
         <img src="./static/images/roadanchor.png" width="1536" height="1024" fetchpriority="high" decoding="async" alt="RoadAnchOR logo: a white autonomous car with rainbow-colored road paths and the RoadAnchOR name.">
       </figure>
     </section>
     <section class="abstract-section" id="abstract" aria-labelledby="abstract-heading">
+      <div class="abstract-container">
       <div class="section-heading">
-        <span class="rainbow-rule" aria-hidden="true"></span>
         <h2 id="abstract-heading">Abstract</h2>
       </div>
       <div class="abstract-copy">
         <p>End-to-end autonomous driving models increasingly rely on query-based frameworks for trajectory generation. However, existing methods face a critical limitation: planning queries are often initialized without explicit geometric priors or depend on rigid, static anchors that fail to adapt to diverse environments. In this paper, we propose RoadAnchOR, a novel road-adaptive planning framework designed to overcome this bottleneck. We introduce Road-Adaptive Query Anchoring, which explicitly leverages online-predicted road geometry to initialize planning queries. This mechanism dynamically aligns initial queries with feasible driving paths, ensuring that the trajectory generation process is inherently grounded in the current road structure. We further introduce a collision avoidance constraint based on agent geometry to encourage safer trajectories generated from road geometry. Experiments on Bench2Drive show that RoadAnchOR achieves competitive closed-loop performance compared with state-of-the-art methods, offering a novel planning framework through adaptive query anchoring.</p>
+      </div>
       </div>
     </section>
   </main>
