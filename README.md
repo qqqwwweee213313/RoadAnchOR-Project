@@ -13,7 +13,7 @@ The page contains the manuscript title, supplied RoadAnchOR illustration, abstra
 - `static/images/roadanchor.png`: supplied 1536 × 1024 illustration, preserved at its original resolution.
 - `static/images/roadanchor-architecture-figure2.png`: high-resolution rendering of manuscript Figure 2.
 - `static/data/scenarios.json`: generated scenario and video catalog.
-- `static/js/qualitative.mjs`: native video players and scenario selection.
+- `static/js/qualitative.mjs`: native video players in the scenario gallery.
 - `scripts/import-videos.mjs`: imports videos from a separate local source folder.
 - `.nojekyll`: enables direct serving of static files on GitHub Pages.
 

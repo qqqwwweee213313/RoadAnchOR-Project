@@ -65,10 +65,7 @@ function makeClip(clip, scenario) {
 }
 export async function initializeVideos() {
   const list = document.getElementById('scenario-list');
-  const tools = document.getElementById('scenario-tools');
-  const select = document.getElementById('scenario-select');
-  const status = document.getElementById('scenario-status');
-  if (!list || !tools || !select || !status) return;
+  if (!list) return;
   try {
     const response = await fetch(new URL('../data/scenarios.json', import.meta.url));
     if (!response.ok) throw new Error('Video catalog request failed.');
@@ -88,30 +85,6 @@ export async function initializeVideos() {
       return section;
     });
     list.replaceChildren(...sections);
-    select.replaceChildren();
-    const all = element('option', '', 'All scenarios');
-    all.value = '';
-    select.append(all);
-    for (const scenario of scenarios) {
-      const option = element('option', '', scenario.title);
-      option.value = scenario.id;
-      select.append(option);
-    }
-    const update = () => {
-      let scenarioCount = 0;
-      let videoCount = 0;
-      for (const section of sections) {
-        section.hidden = Boolean(select.value && select.value !== section.id);
-        if (section.hidden) section.querySelectorAll('video').forEach(video => video.pause());
-        else { scenarioCount++; videoCount += section.querySelectorAll('video').length; }
-      }
-      status.textContent = scenarioCount + (scenarioCount === 1 ? ' scenario' : ' scenarios')
-        + ' · ' + videoCount + (videoCount === 1 ? ' video' : ' videos');
-    };
-    select.addEventListener('change', update);
-    tools.hidden = false;
-    select.parentElement.hidden = scenarios.length < 2;
-    update();
   } catch {
     list.replaceChildren(element('p', 'videos-empty', 'Videos could not be loaded. Please refresh this page to try again.'));
   }
