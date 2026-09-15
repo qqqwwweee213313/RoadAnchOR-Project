@@ -73,4 +73,4 @@ Sources: [GitHub file limits](https://docs.github.com/en/repositories/working-wi
 
 All scenarios appear under Qualitative Results in a two-column grid, with one column on mobile. Each scenario displays its videos directly. Native playback, seeking, volume, and fullscreen controls are available. Videos are muted initially and do not autoplay. Playing one pauses other videos. A direct Open video link is provided for each clip.
 
-Figure 2 is displayed as a full-page, high-resolution PNG rendered from the manuscript figure. The supplied logo and published abstract remain unchanged.
+Figure 2 is displayed as a full-page, high-resolution PNG rendered from the manuscript figure. Video imports preserve the supplied logo and the current page text.
