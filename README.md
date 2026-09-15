@@ -2,7 +2,7 @@
 
 **Road-Adaptive Query Anchoring for End-to-End Autonomous Driving**
 
-[Project Page](https://qqqwwweee213313.github.io/RoadAnchOR/) · [Code Repository](https://github.com/qqqwwweee213313/RoadAnchOR-Code)
+[Project Page](https://qqqwwweee213313.github.io/RoadAnchOR-Project/) · [Code Repository](https://github.com/qqqwwweee213313/RoadAnchOR)
 
 The page contains the manuscript title, supplied RoadAnchOR illustration, abstract, Figure 2 architecture, and a scenario-based gallery for RoadAnchOR qualitative videos.
 
