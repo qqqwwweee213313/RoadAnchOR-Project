@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "scenario-aa7ff29b5c99",
+      "title": "Blocked Intersection",
+      "description": "",
+      "clips": [
+        {
+          "title": "RoadAnchOR · r2204",
+          "caption": "",
+          "src": "./static/videos/scenarios/scenario-aa7ff29b5c99/clip-df63f81b1b744c6f.mp4",
+          "type": "video/mp4",
+          "poster": "./static/videos/scenarios/scenario-aa7ff29b5c99/poster-55e738b505b6285e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scenario-e91aebc7d71d",
+      "title": "Hard Break Route",
+      "description": "",
+      "clips": [
+        {
+          "title": "RoadAnchOR · r3540",
+          "caption": "",
+          "src": "./static/videos/scenarios/scenario-e91aebc7d71d/clip-b2c581e3e72950d2.mp4",
+          "type": "video/mp4",
+          "poster": "./static/videos/scenarios/scenario-e91aebc7d71d/poster-d3d1820dd7dd0feb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scenario-e7b6c7cfeef4",
+      "title": "Enter Actor Flow",
+      "description": "",
+      "clips": [
+        {
+          "title": "RoadAnchOR · r11715",
+          "caption": "",
+          "src": "./static/videos/scenarios/scenario-e7b6c7cfeef4/clip-49f194d8d4331f50.mp4",
+          "type": "video/mp4",
+          "poster": "./static/videos/scenarios/scenario-e7b6c7cfeef4/poster-2d029a01e7428d38.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scenario-85dfc54053a0",
+      "title": "Parking Cut In",
+      "description": "",
+      "clips": [
+        {
+          "title": "RoadAnchOR · r18311",
+          "caption": "",
+          "src": "./static/videos/scenarios/scenario-85dfc54053a0/clip-44862522739067b3.mp4",
+          "type": "video/mp4",
+          "poster": "./static/videos/scenarios/scenario-85dfc54053a0/poster-4819f4e362674046.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scenario-e76f48c3d944",
+      "title": "Dynamic Object Crossing",
+      "description": "",
+      "clips": [
+        {
+          "title": "RoadAnchOR · r24211",
+          "caption": "",
+          "src": "./static/videos/scenarios/scenario-e76f48c3d944/clip-562510df9990f732.mp4",
+          "type": "video/mp4",
+          "poster": "./static/videos/scenarios/scenario-e76f48c3d944/poster-f9f6a9dcaf0e3bab.jpg"
+        }
+      ]
+    }
+  ]
+}

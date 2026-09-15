@@ -4,16 +4,20 @@
 
 Anonymous research project page: https://qqqwwweee213313.github.io/RoadAnchOR/
 
-This first version contains the manuscript title, supplied RoadAnchOR illustration, and abstract.
+The page contains the manuscript title, supplied RoadAnchOR illustration, abstract, Figure 2 architecture, and a scenario-based gallery for RoadAnchOR qualitative videos.
 
 ## Edit the page
 
 - `index.html`: title, abstract, anonymous author label, and sharing metadata.
 - `static/css/index.css`: responsive layout and styling.
 - `static/images/roadanchor.png`: supplied 1536 × 1024 illustration, preserved at its original resolution.
+- `static/images/roadanchor-architecture-figure2.png`: high-resolution rendering of manuscript Figure 2.
+- `static/data/scenarios.json`: generated scenario and video catalog.
+- `static/js/qualitative.mjs`: native video players and scenario selection.
+- `scripts/import-videos.mjs`: imports videos from a separate local source folder.
 - `.nojekyll`: enables direct serving of static files on GitHub Pages.
 
-No package installation or build step is required. GitHub Pages publishes the root of the `master` branch. After updating the title, also update the page title and sharing metadata. Add VAD vs. RoadAnchOR comparison videos and RoadAnchOR standalone videos when the final assets are available.
+No package installation or build step is required. GitHub Pages publishes the root of the `master` branch. After updating the title, also update the page title and sharing metadata. This project uses RoadAnchOR standalone videos only. See [VIDEO_GUIDE.md](VIDEO_GUIDE.md) for folder conventions, importing, and publishing.
 
 The page requests `noindex, nofollow` during anonymous review. This is a search-engine preference, not access control: both the page and repository are public.
 

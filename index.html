@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/index.css">
+  <script type="module" src="./static/js/qualitative.mjs"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RoadAnchOR">
   <meta property="og:title" content="RoadAnchOR: Road-Adaptive Query Anchoring for End-to-End Autonomous Driving">
@@ -38,6 +39,8 @@
         <p class="authors">Anonymous Authors</p>
         <nav class="publication-links" aria-label="Paper resources">
           <a class="resource-button" href="#abstract"><span aria-hidden="true">↓</span> Abstract</a>
+          <a class="resource-button" href="#architecture">Architecture</a>
+          <a class="resource-button" href="#qualitative-videos">Videos</a>
         </nav>
       </div>
       <figure class="hero-art">
@@ -52,6 +55,34 @@
       <div class="abstract-copy">
         <p>End-to-end autonomous driving models increasingly rely on query-based frameworks for trajectory generation. However, existing methods face a critical limitation: planning queries are often initialized without explicit geometric priors or depend on rigid, static anchors that fail to adapt to diverse environments. In this paper, we propose RoadAnchOR, a novel road-adaptive planning framework designed to overcome this bottleneck. We introduce Road-Adaptive Query Anchoring, which explicitly leverages online-predicted road geometry to initialize planning queries. This mechanism dynamically aligns initial queries with feasible driving paths, ensuring that the trajectory generation process is inherently grounded in the current road structure. We further introduce a collision avoidance constraint based on agent geometry to encourage safer trajectories generated from road geometry. Experiments on Bench2Drive show that RoadAnchOR achieves competitive closed-loop performance compared with state-of-the-art methods, offering a novel planning framework through adaptive query anchoring.</p>
       </div>
+      </div>
+    </section>
+    <section class="architecture-section" id="architecture" aria-labelledby="architecture-heading">
+      <div class="wide-container">
+        <div class="section-heading"><h2 id="architecture-heading">Architecture</h2></div>
+        <figure class="method-figure">
+          <a href="./static/images/roadanchor-architecture-figure2.png" target="_blank" rel="noopener" aria-label="Open Figure 2 at full resolution">
+            <img src="./static/images/roadanchor-architecture-figure2.png" width="3000" height="1553" loading="lazy" decoding="async" alt="Figure 2. RoadAnchOR architecture: multi-view images and BEV features feed motion and map decoding; RAS scores predicted centerlines, ARA constructs road and distance planning queries, and RAC provides a collision avoidance loss.">
+          </a>
+          <figcaption>
+            <p><strong>Figure 2. Overview of the RoadAnchOR architecture.</strong> <strong>(Top)</strong> BEV features from multi-view images feed motion and map decoding branches, supplying scene tokens and predicted centerlines. <strong>(Bottom left) Road-Aware Scoring (RAS)</strong> assigns road scores to online-predicted centerlines according to their planning relevance. <strong>(Bottom right) Adaptive Road Anchoring (ARA)</strong> uses the scored road geometry as a prior for road-adaptive query anchoring. Road and distance queries are combined to initialize planning queries, which the planning decoder refines through road and distance self-attention and cross-attention to scene tokens. The trajectory head then outputs trajectories and scores. At the upper right, <strong>Road-Agent Collision Constraint (RAC)</strong> applies a collision avoidance loss based on agent geometry to the output trajectories.</p>
+            <a class="figure-open" href="./static/images/roadanchor-architecture-figure2.png" target="_blank" rel="noopener">View Figure 2 at full resolution ↗</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="qualitative-section" id="qualitative-videos" aria-labelledby="qualitative-heading">
+      <div class="wide-container">
+        <div class="section-heading"><h2 id="qualitative-heading">Qualitative Results</h2></div>
+        <p class="section-intro">RoadAnchOR driving videos, organized by scenario.</p>
+        <div class="scenario-tools" id="scenario-tools" hidden>
+          <label class="scenario-filter">Scenario <select id="scenario-select" aria-controls="scenario-list"><option value="">All scenarios</option></select></label>
+          <p id="scenario-status" class="scenario-status" role="status" aria-live="polite"></p>
+        </div>
+        <div id="scenario-list">
+          <p class="videos-empty">Qualitative videos will be added here.</p>
+        </div>
+        <noscript><p class="videos-empty">Enable JavaScript to view the scenario video gallery.</p></noscript>
       </div>
     </section>
   </main>

@@ -168,3 +168,47 @@ h2::after {
   .abstract-copy p { color: #222; font-size: 11pt; line-height: 1.6; }
   .site-footer { padding: 1rem; }
 }
+/* Architecture and scenario videos */
+[hidden] { display: none !important; }
+.wide-container { max-width: 1140px; margin: 0 auto; }
+.architecture-section { padding: 3.5rem 1.5rem; }
+.method-figure { margin: 0; }
+.method-figure > a { display: block; border-radius: 6px; }
+.method-figure img { display: block; width: 100%; height: auto; }
+.method-figure figcaption { max-width: 960px; margin: 1.75rem auto 0; color: #526176; font-size: 1rem; line-height: 1.8; }
+.method-figure figcaption p { margin: 0 0 .8rem; }
+.method-figure strong { color: var(--ink); font-weight: 600; }
+.figure-open { font-size: .875rem; text-decoration: none; }
+.figure-open:hover { text-decoration: underline; }
+.qualitative-section { padding: 3.5rem 1.5rem; background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section-intro { margin: -1rem auto 2rem; color: #526176; text-align: center; }
+.scenario-tools { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding-bottom: 1.5rem; }
+.scenario-filter { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; font-size: .9rem; font-weight: 500; }
+.scenario-filter select { max-width: 100%; min-height: 44px; padding: .5rem 2rem .5rem .75rem; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: var(--ink); font: inherit; }
+.scenario-filter select:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.scenario-status { margin: 0; color: var(--muted); font-size: .875rem; }
+.scenario + .scenario { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.scenario-title { margin: 0 0 .75rem; font-size: 1.45rem; font-weight: 650; line-height: 1.35; overflow-wrap: anywhere; }
+.scenario-description { margin: 0 0 1.5rem; max-width: 900px; color: #526176; overflow-wrap: anywhere; }
+.video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.video-card { min-width: 0; margin: 0; padding: 1.1rem; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.video-card:only-child { grid-column: 1 / -1; }
+.video-title { margin: 0 0 .8rem; color: var(--ink); font-size: 1rem; font-weight: 600; overflow-wrap: anywhere; }
+.scenario-video { display: block; width: 100%; height: auto; aspect-ratio: auto 16 / 9; border-radius: 5px; background: #101621; }
+.video-caption { padding-top: .8rem; color: #526176; font-size: .9rem; line-height: 1.7; overflow-wrap: anywhere; }
+.video-caption p { margin: 0 0 .6rem; }
+.video-open { font-size: .85rem; text-decoration: none; }
+.video-open:hover { text-decoration: underline; }
+.video-error { color: #9b302d; font-size: .9rem; }
+.videos-empty { max-width: 780px; margin: 0 auto; padding: 2rem 1rem; border: 1px dashed #cbd5e1; border-radius: 8px; color: var(--muted); text-align: center; }
+@media (max-width: 768px) {
+  .architecture-section, .qualitative-section { padding: 2.5rem 1.25rem; }
+  .method-figure figcaption { margin-top: 1.25rem; font-size: .95rem; }
+  .video-grid { grid-template-columns: 1fr; }
+  .video-card { padding: .85rem; }
+  .scenario-title { font-size: 1.3rem; }
+}
+@media print {
+  .qualitative-section { background: #fff; }
+  .scenario-tools, .scenario-video, .video-error { display: none; }
+}
