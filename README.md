@@ -4,7 +4,7 @@
 
 [Project Page](https://qqqwwweee213313.github.io/RoadAnchOR-Project/) · [Code Repository](https://github.com/qqqwwweee213313/RoadAnchOR)
 
-The page contains the manuscript title, supplied RoadAnchOR illustration, abstract, Figure 2 architecture, and a scenario-based gallery for RoadAnchOR qualitative videos.
+The page contains the manuscript title, supplied RoadAnchOR illustration, abstract, Figure 2 architecture, Figure 4 multimodal trajectory visualization from RAS to ARA, and a scenario-based gallery for RoadAnchOR qualitative videos. Figure 4 appears immediately before the video gallery.
 
 ## Edit the page
 
@@ -12,6 +12,7 @@ The page contains the manuscript title, supplied RoadAnchOR illustration, abstra
 - `static/css/index.css`: responsive layout and styling.
 - `static/images/roadanchor.png`: supplied 1536 × 1024 illustration, preserved at its original resolution.
 - `static/images/roadanchor-architecture-figure2.png`: high-resolution rendering of manuscript Figure 2.
+- `static/images/roadanchor-ras-ara-figure4.png`: rendering of the supplied Figure 4 showing multimodal trajectory candidates and the final predicted ego trajectory in straight-road and intersection scenarios.
 - `static/data/scenarios.json`: generated scenario and video catalog.
 - `static/js/qualitative.mjs`: native video players in the scenario gallery.
 - `scripts/import-videos.mjs`: imports videos from a separate local source folder.

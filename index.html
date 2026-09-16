@@ -40,6 +40,7 @@
         <nav class="publication-links" aria-label="Paper resources">
           <a class="resource-button" href="#abstract"><span aria-hidden="true">↓</span> Abstract</a>
           <a class="resource-button" href="#architecture">Architecture</a>
+          <a class="resource-button" href="#multimodal-trajectories">Trajectories</a>
           <a class="resource-button" href="#qualitative-videos">Videos</a>
           <a class="resource-button" href="https://github.com/qqqwwweee213313/RoadAnchOR" target="_blank" rel="noopener noreferrer">Code ↗</a>
         </nav>
@@ -68,6 +69,21 @@
           <figcaption>
             <p><strong>Figure 2. Overview of the RoadAnchOR architecture.</strong> <strong>(Top)</strong> BEV features from multi-view images feed motion and map decoding branches, supplying scene tokens and predicted centerlines. <strong>(Bottom left) Road-Aware Scoring (RAS)</strong> assigns road scores to online-predicted centerlines according to their planning relevance. <strong>(Bottom right) Adaptive Road Anchoring (ARA)</strong> uses the scored road geometry as a prior for road-adaptive query anchoring. Road and distance queries are combined to initialize planning queries, which the planning decoder refines through road and distance self-attention and cross-attention to scene tokens. The trajectory head then outputs trajectories and scores. At the upper right, <strong>Road-Agent Collision Constraint (RAC)</strong> applies a collision avoidance loss based on agent geometry to the output trajectories.</p>
             <a class="figure-open" href="./static/images/roadanchor-architecture-figure2.png" target="_blank" rel="noopener">View Figure 2 at full resolution ↗</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="architecture-section trajectory-section" id="multimodal-trajectories" aria-labelledby="trajectory-heading">
+      <div class="wide-container">
+        <div class="section-heading"><h2 id="trajectory-heading">Multimodal Trajectories: RAS → ARA</h2></div>
+        <p class="section-intro">Road-Aware Scoring (RAS) scores predicted road geometries, and Adaptive Road Anchoring (ARA) uses these priors to initialize road-adaptive planning queries for multimodal trajectory generation.</p>
+        <figure class="method-figure">
+          <a href="./static/images/roadanchor-ras-ara-figure4.png" target="_blank" rel="noopener" aria-label="Open Figure 4 at full resolution">
+            <img src="./static/images/roadanchor-ras-ara-figure4.png" width="3600" height="1779" loading="lazy" decoding="async" alt="Figure 4. Bird's-eye views of (a) a straight road and (b) an intersection. Colored lines show multimodal trajectory candidates associated with different road geometries, and the black line shows the final predicted ego trajectory.">
+          </a>
+          <figcaption>
+            <p><strong>Figure 4. Multimodal trajectory visualization from RAS to ARA.</strong> Panels <strong>(a)</strong> and <strong>(b)</strong> show a straight-road scenario and an intersection scenario, respectively. The black line shows the final predicted ego trajectory; the other colors distinguish candidate trajectories associated with different road geometries.</p>
+            <a class="figure-open" href="./static/images/roadanchor-ras-ara-figure4.png" target="_blank" rel="noopener">View Figure 4 at full resolution ↗</a>
           </figcaption>
         </figure>
       </div>
