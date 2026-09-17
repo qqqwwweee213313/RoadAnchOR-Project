@@ -16,6 +16,20 @@
       ]
     },
     {
+      "id": "scenario-c89227de6638",
+      "title": "Vehicle Opens Door Two Ways",
+      "description": "",
+      "clips": [
+        {
+          "title": "RoadAnchOR · r3472",
+          "caption": "",
+          "src": "./static/videos/scenarios/scenario-c89227de6638/clip-85cd4b7d3eab2016.mp4",
+          "type": "video/mp4",
+          "poster": "./static/videos/scenarios/scenario-c89227de6638/poster-c199c0acf5d8c20a.jpg"
+        }
+      ]
+    },
+    {
       "id": "scenario-e91aebc7d71d",
       "title": "Hard Break Route",
       "description": "",
@@ -68,6 +82,20 @@
           "src": "./static/videos/scenarios/scenario-e76f48c3d944/clip-562510df9990f732.mp4",
           "type": "video/mp4",
           "poster": "./static/videos/scenarios/scenario-e76f48c3d944/poster-f9f6a9dcaf0e3bab.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scenario-0f13ca4767b9",
+      "title": "Parked Obstacle",
+      "description": "",
+      "clips": [
+        {
+          "title": "RoadAnchOR · r25318",
+          "caption": "",
+          "src": "./static/videos/scenarios/scenario-0f13ca4767b9/clip-8081b5d84afa1084.mp4",
+          "type": "video/mp4",
+          "poster": "./static/videos/scenarios/scenario-0f13ca4767b9/poster-ef2906286744717c.jpg"
         }
       ]
     }
