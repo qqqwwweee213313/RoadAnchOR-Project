@@ -171,6 +171,12 @@ h2::after {
 /* Architecture and scenario videos */
 [hidden] { display: none !important; }
 .wide-container { max-width: 1140px; margin: 0 auto; }
+.overview-section { padding: 3.5rem 1.5rem; border-bottom: 1px solid var(--line); }
+.overview-figure { margin: 0; }
+.overview-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 10px; background: var(--soft); }
+.overview-video:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+.overview-caption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; }
+.overview-caption p { margin: 0; color: var(--muted); font-size: .9rem; }
 .architecture-section { padding: 3.5rem 1.5rem; }
 .trajectory-section { border-top: 1px solid var(--line); }
 .method-figure { margin: 0; }
@@ -199,7 +205,7 @@ h2::after {
 .video-error { color: #9b302d; font-size: .9rem; }
 .videos-empty { max-width: 780px; margin: 0 auto; padding: 2rem 1rem; border: 1px dashed #cbd5e1; border-radius: 8px; color: var(--muted); text-align: center; }
 @media (max-width: 768px) {
-  .architecture-section, .qualitative-section { padding: 2.5rem 1.25rem; }
+  .overview-section, .architecture-section, .qualitative-section { padding: 2.5rem 1.25rem; }
   .method-figure figcaption { margin-top: 1.25rem; font-size: .95rem; }
   .scenario-list { grid-template-columns: minmax(0, 1fr); }
   .video-card { padding: .85rem; }
@@ -207,5 +213,5 @@ h2::after {
 }
 @media print {
   .qualitative-section { background: #fff; }
-  .scenario-video, .video-error { display: none; }
+  .overview-video, .scenario-video, .video-error { display: none; }
 }

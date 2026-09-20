@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=20260920">
   <script type="module" src="./static/js/qualitative.mjs"></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RoadAnchOR">
@@ -39,6 +39,7 @@
         <p class="authors">Anonymous Authors</p>
         <nav class="publication-links" aria-label="Paper resources">
           <a class="resource-button" href="#abstract"><span aria-hidden="true">↓</span> Abstract</a>
+          <a class="resource-button" href="#algorithm-overview"><span aria-hidden="true">▶</span> Overview</a>
           <a class="resource-button" href="#architecture">Architecture</a>
           <a class="resource-button" href="#multimodal-trajectories">Trajectories</a>
           <a class="resource-button" href="#qualitative-videos">Videos</a>
@@ -57,6 +58,22 @@
       <div class="abstract-copy">
         <p>End-to-end autonomous driving models increasingly rely on query-based frameworks for trajectory generation. However, existing methods face a critical limitation: planning queries are often initialized without explicit geometric priors or depend on rigid, static anchors that fail to adapt to diverse environments. In this paper, we propose RoadAnchOR, a novel road-adaptive planning framework designed to overcome this bottleneck. We introduce Road-Aware Scoring (RAS) to score the planning relevance of online-predicted road geometry and provide an explicit geometric prior. Adaptive Road Anchoring (ARA) uses this prior to initialize planning queries. This mechanism dynamically aligns initial queries with feasible driving paths, ensuring that the trajectory generation process is inherently grounded in the current road structure. We further introduce a collision avoidance constraint based on agent geometry to encourage safer trajectories generated from road geometry. Experiments on Bench2Drive show that RoadAnchOR achieves competitive closed-loop performance compared with state-of-the-art methods, offering a novel planning framework through adaptive query anchoring.</p>
       </div>
+      </div>
+    </section>
+    <section class="overview-section" id="algorithm-overview" aria-labelledby="overview-heading">
+      <div class="wide-container">
+        <div class="section-heading"><h2 id="overview-heading">Algorithm Overview</h2></div>
+        <p class="section-intro">An animated introduction to RAS, ARA, and RAC, followed by multimodal trajectories and RoadAnchOR driving examples.</p>
+        <figure class="overview-figure">
+          <video class="overview-video" controls playsinline preload="none" width="1920" height="1080" poster="./static/images/roadanchor-algorithm-overview-poster.png" aria-label="RoadAnchOR algorithm overview" aria-describedby="overview-caption">
+            <source src="./static/videos/roadanchor-algorithm-overview.mp4" type="video/mp4">
+            Your browser does not support embedded video. Please use the Download MP4 link below.
+          </video>
+          <figcaption class="overview-caption">
+            <p id="overview-caption">2:10 · English captions · No audio</p>
+            <a class="resource-button" href="https://github.com/qqqwwweee213313/RoadAnchOR-Project/releases/download/video-2026-09-20/RoadAnchOR_Explainer_EN_1080p.mp4"><span aria-hidden="true">↓</span> Download MP4 (9.8 MB)</a>
+          </figcaption>
+        </figure>
       </div>
     </section>
     <section class="architecture-section" id="architecture" aria-labelledby="architecture-heading">
