@@ -4,7 +4,7 @@
 
 [Project Page](https://qqqwwweee213313.github.io/RoadAnchOR-Project/) · [Code Repository](https://github.com/qqqwwweee213313/RoadAnchOR)
 
-The page contains the manuscript title, supplied RoadAnchOR illustration, abstract, a captioned algorithm introduction video, Figure 2 architecture, Figure 4 multimodal trajectory visualization from RAS to ARA, and a scenario-based gallery for RoadAnchOR qualitative videos. The approximately 2:17 algorithm video appears after the abstract, with native playback controls and a [Download MP4](https://github.com/qqqwwweee213313/RoadAnchOR-Project/releases/download/video-2026-09-21/RoadAnchOR_Explainer_EN_1080p.mp4) button. It illustrates anchors across multiple centerline directions and travel-distance bands, and includes the full Vehicle Opens Door Two Ways source clip at its original speed. It uses English captions without audio. Figure 4 appears immediately before the scenario gallery.
+The page contains the manuscript title, supplied RoadAnchOR illustration, abstract, a captioned algorithm introduction video, Figure 2 architecture, Figure 4 multimodal trajectory visualization from RAS to ARA, and a scenario-based gallery for RoadAnchOR qualitative videos. The approximately 2:34 algorithm video appears after the abstract, with native playback controls and a [Download MP4](https://github.com/qqqwwweee213313/RoadAnchOR-Project/releases/download/video-2026-09-21-v3/RoadAnchOR_Explainer_EN_1080p.mp4) button. It contrasts fixed anchors with schematic road-adaptive initialization on a two-lane road and an intersection, including candidates that reach the adjacent lane. It includes the complete Parked Obstacle and Vehicle Opens Door Two Ways source clips at their original speed. It uses English captions without audio. Figure 4 appears immediately before the scenario gallery.
 
 ## Edit the page
 
@@ -13,7 +13,7 @@ The page contains the manuscript title, supplied RoadAnchOR illustration, abstra
 - `static/images/roadanchor.png`: supplied 1536 × 1024 illustration, preserved at its original resolution.
 - `static/images/roadanchor-architecture-figure2.png`: high-resolution rendering of manuscript Figure 2.
 - `static/images/roadanchor-ras-ara-figure4.png`: rendering of the supplied Figure 4 showing multimodal trajectory candidates and the final predicted ego trajectory in straight-road and intersection scenarios.
-- `static/videos/roadanchor-algorithm-overview.mp4`: 1080p/30 fps, 136.733333-second algorithm introduction with English captions (4,102 frames).
+- `static/videos/roadanchor-algorithm-overview.mp4`: 1080p/30 fps, 153.733333-second algorithm introduction with English captions (4,612 frames).
 - `static/images/roadanchor-algorithm-overview-poster.png`: poster taken from the introduction video.
 - `static/data/scenarios.json`: generated scenario and video catalog.
 - `static/js/qualitative.mjs`: native video players in the scenario gallery.
