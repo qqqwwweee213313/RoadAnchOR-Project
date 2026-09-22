@@ -215,3 +215,5 @@ h2::after {
   .qualitative-section { background: #fff; }
   .overview-video, .scenario-video, .video-error { display: none; }
 }
+
+.overview-caption .overview-note { flex-basis: 100%; font-size: .8rem; }

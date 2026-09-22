@@ -1,0 +1,27 @@
+RoadAnchOR — English AI narration
+Voice: Kokoro-82M v1.0 / af_heart
+
+Spoken wording is condensed to fit the existing captions and visuals.
+
+0.680–5.352: RoadAnchOR: road-adaptive query anchoring for end-to-end autonomous driving.
+8.480–11.851: Fixed anchors do not change with each scene's road geometry.
+13.080–17.453: Initial candidates follow road geometry, including the adjacent lane.
+18.480–23.600: As road geometry changes at the intersection, anchoring adapts to the new centerlines.
+26.480–31.493: VAD perception provides scene tokens and online-predicted centerlines.
+32.080–36.795: Road scores guide queries. Collision supervision applies only in training.
+38.480–43.515: RAS scores planning relevance from predicted centerlines and the routing goal.
+44.080–49.072: Road scores guide centerline selection and condition road-query initialization.
+49.880–54.744: Training uses ground-truth ego paths to supervise the RAS score head.
+56.480–61.664: ARA embeds road geometry, initial pose, and road scores into queries.
+62.880–67.403: Learnable distance queries represent longitudinal travel-distance bands.
+69.080–75.224: Each road-distance pair is concatenated and projected into a planning query: an R by M grid.
+76.480–80.811: Road attention: fixed distance band. Distance attention: fixed road.
+81.380–85.881: Cross-attention connects planning queries to agent, map and goal context.
+86.780–91.132: The head predicts trajectories and selection scores, distinct from road scores.
+92.480–97.515: RAC models ego and agents with size- and orientation-aware circles.
+98.880–105.472: Distance-based collision loss trains the ground-truth-assigned predicted trajectory, without runtime filtering.
+106.480–110.960: Figure four: multimodal candidates on a straight road and an intersection.
+111.480–115.469: Colored candidates; black is the final predicted ego trajectory.
+116.480–122.368: Recorded RoadAnchOR simulation: Parked Obstacle. Full source clip at original playback speed.
+132.280–139.043: Recorded RoadAnchOR simulation: Vehicle Opens Door Two Ways. Full source clip at original playback speed.
+146.313–152.372: Score the road. Anchor the queries. Decode with context. Road-adaptive planning from the current scene.
