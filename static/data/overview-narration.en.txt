@@ -1,7 +1,7 @@
-RoadAnchOR — English AI narration
+RoadAnchOR — AI English narration
 Voice: Kokoro-82M v1.0 / af_heart
 
-Spoken wording is condensed to fit the existing captions and visuals.
+Narration condenses the on-screen captions; captions are authoritative.
 
 0.680–5.352: RoadAnchOR: road-adaptive query anchoring for end-to-end autonomous driving.
 8.480–11.851: Fixed anchors do not change with each scene's road geometry.
@@ -20,8 +20,10 @@ Spoken wording is condensed to fit the existing captions and visuals.
 86.780–91.132: The head predicts trajectories and selection scores, distinct from road scores.
 92.480–97.515: RAC models ego and agents with size- and orientation-aware circles.
 98.880–105.472: Distance-based collision loss trains the ground-truth-assigned predicted trajectory, without runtime filtering.
-106.480–110.960: Figure four: multimodal candidates on a straight road and an intersection.
-111.480–115.469: Colored candidates; black is the final predicted ego trajectory.
-116.480–122.368: Recorded RoadAnchOR simulation: Parked Obstacle. Full source clip at original playback speed.
-132.280–139.043: Recorded RoadAnchOR simulation: Vehicle Opens Door Two Ways. Full source clip at original playback speed.
-146.313–152.372: Score the road. Anchor the queries. Decode with context. Road-adaptive planning from the current scene.
+106.480–113.157: Figure four: a straight road and an intersection. Each color marks one RAS-scored road geometry.
+113.780–120.692: With this planning-relevant road information, ARA performs adaptive road anchoring to initialize the queries.
+121.380–127.972: Same-colored candidates are the multimodal trajectories generated from these road-adaptive planning queries.
+128.680–131.667: The black line is the top-one predicted trajectory.
+132.480–138.368: Recorded RoadAnchOR simulation: Parked Obstacle. Full source clip at original playback speed.
+148.280–155.043: Recorded RoadAnchOR simulation: Vehicle Opens Door Two Ways. Full source clip at original playback speed.
+162.313–168.756: Score the road. Anchor the queries. RoadAnchOR: road-adaptive query anchoring for end-to-end driving.
